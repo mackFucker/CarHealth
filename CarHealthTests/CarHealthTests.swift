@@ -1,36 +1,104 @@
-//
-//  CarHealthTests.swift
-//  CarHealthTests
-//
-//  Created by Дэвид Кихтенко on 28.01.2026.
-//
-
 import XCTest
+import SwiftData
 @testable import CarHealth
 
-final class CarHealthTests: XCTestCase {
+@MainActor
+final class AppServicesTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    private var container: ModelContainer!
+    private var context: ModelContext!
+
+    // MARK: - Setup
+
+    override func setUp() async throws {
+        container = try ModelContainer(
+            for: Role.self,
+                 User.self,
+                 Service.self,
+                 Car.self,
+                 ServiceOrder.self,
+            configurations: ModelConfiguration(isStoredInMemoryOnly: true)
+        )
+        context = ModelContext(container)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() async throws {
+        container = nil
+        context = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    // MARK: - Seeder Tests
+
+    func testSeederCreatesInitialData() throws {
+        AppDataSeeder.seedIfNeeded(context: context)
+
+        let roles = try context.fetch(FetchDescriptor<Role>())
+        let users = try context.fetch(FetchDescriptor<User>())
+        let services = try context.fetch(FetchDescriptor<Service>())
+
+        XCTAssertEqual(roles.count, 4, "Должно быть создано 4 роли")
+        XCTAssertEqual(users.count, 2, "Должно быть создано 2 пользователя")
+        XCTAssertFalse(services.isEmpty, "Сервисы должны быть созданы")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testSeederDoesNotDuplicateData() throws {
+        AppDataSeeder.seedIfNeeded(context: context)
+        AppDataSeeder.seedIfNeeded(context: context)
+
+        let roles = try context.fetch(FetchDescriptor<Role>())
+        XCTAssertEqual(roles.count, 4, "Seeder не должен дублировать роли")
+    }
+
+    // MARK: - AuthService Tests
+
+    func testLoginSuccess() throws {
+        AppDataSeeder.seedIfNeeded(context: context)
+
+        let authService = AuthService(context: context)
+
+        XCTAssertNoThrow(
+            try authService.login(email: "admin", password: "admin")
+        )
+
+        XCTAssertNotNil(authService.currentUser)
+        XCTAssertEqual(authService.currentUser?.email, "admin")
+    }
+
+    func testLoginFailure() throws {
+        AppDataSeeder.seedIfNeeded(context: context)
+        let authService = AuthService(context: context)
+
+        XCTAssertThrowsError(
+            try authService.login(email: "wrong", password: "wrong")
+        ) { error in
+            XCTAssertEqual(
+                error as? AuthError,
+                AuthError.invalidCredentials
+            )
         }
     }
 
+    func testLogoutClearsSession() throws {
+        AppDataSeeder.seedIfNeeded(context: context)
+        let authService = AuthService(context: context)
+
+        try authService.login(email: "user", password: "user")
+        authService.logout()
+
+        XCTAssertNil(authService.currentUser)
+    }
+
+    func testRestoreSession() throws {
+        AppDataSeeder.seedIfNeeded(context: context)
+
+        // логинимся
+        var authService: AuthService? = AuthService(context: context)
+        try authService?.login(email: "user", password: "user")
+
+        // пересоздаём сервис (симуляция перезапуска)
+        authService = AuthService(context: context)
+
+        XCTAssertNotNil(authService?.currentUser)
+        XCTAssertEqual(authService?.currentUser?.email, "user")
+    }
 }
