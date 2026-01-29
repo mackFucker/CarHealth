@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8F17417D2F2A665100452A46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F1741622F2A664E00452A46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1741692F2A664E00452A46;
+			remoteInfo = CarHealth;
+		};
+		8F1741872F2A665100452A46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F1741622F2A664E00452A46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1741692F2A664E00452A46;
+			remoteInfo = CarHealth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F17416A2F2A664E00452A46 /* CarHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F17417C2F2A665100452A46 /* CarHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1741862F2A665100452A46 /* CarHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F17424B2F2A6E0800452A46 /* Exceptions for "CarHealth" folder in "CarHealthTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/Car.swift,
+				Models/Role.swift,
+				Models/Service.swift,
+				Models/ServiceOrder.swift,
+				Models/User.swift,
+				Navigation/AppRoute.swift,
+				Services/AppDataSeeder.swift,
+				Services/AuthService.swift,
+				ViewModels/CartService.swift,
+				ViewModels/ServiceStore.swift,
+				Views/Catalog/CartView.swift,
+				Views/Catalog/CreateOrderView.swift,
+				Views/Catalog/OrdersListView.swift,
+				Views/Catalog/ServiceCatalogView.swift,
+				Views/Catalog/ServiceEditView.swift,
+				Views/Catalog/ServiceRow.swift,
+				Views/HomeViews/AdminHomeView.swift,
+				Views/HomeViews/ManagerHomeView.swift,
+				Views/HomeViews/ProfileView.swift,
+				Views/HomeViews/UserHomeView.swift,
+				Views/LoginView.swift,
+			);
+			target = 8F17417B2F2A665100452A46 /* CarHealthTests */;
+		};
+		8F17424C2F2A6E0800452A46 /* Exceptions for "CarHealth" folder in "CarHealthUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/Car.swift,
+				Models/Role.swift,
+				Models/Service.swift,
+				Models/ServiceOrder.swift,
+				Models/User.swift,
+				Navigation/AppRoute.swift,
+				Services/AppDataSeeder.swift,
+				Services/AuthService.swift,
+				ViewModels/CartService.swift,
+				ViewModels/ServiceStore.swift,
+				Views/Catalog/CartView.swift,
+				Views/Catalog/CreateOrderView.swift,
+				Views/Catalog/OrdersListView.swift,
+				Views/Catalog/ServiceCatalogView.swift,
+				Views/Catalog/ServiceEditView.swift,
+				Views/Catalog/ServiceRow.swift,
+				Views/HomeViews/AdminHomeView.swift,
+				Views/HomeViews/ManagerHomeView.swift,
+				Views/HomeViews/ProfileView.swift,
+				Views/HomeViews/UserHomeView.swift,
+				Views/LoginView.swift,
+			);
+			target = 8F1741852F2A665100452A46 /* CarHealthUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8F17417F2F2A665100452A46 /* CarHealthTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CarHealthTests;
+			sourceTree = "<group>";
+		};
+		8F1741892F2A665100452A46 /* CarHealthUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CarHealthUITests;
+			sourceTree = "<group>";
+		};
+		8F1742252F2A6E0800452A46 /* CarHealth */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F17424B2F2A6E0800452A46 /* Exceptions for "CarHealth" folder in "CarHealthTests" target */,
+				8F17424C2F2A6E0800452A46 /* Exceptions for "CarHealth" folder in "CarHealthUITests" target */,
+			);
+			path = CarHealth;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F1741672F2A664E00452A46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1741792F2A665100452A46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1741832F2A665100452A46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F1741612F2A664E00452A46 = {
+			isa = PBXGroup;
+			children = (
+				8F1742252F2A6E0800452A46 /* CarHealth */,
+				8F17417F2F2A665100452A46 /* CarHealthTests */,
+				8F1741892F2A665100452A46 /* CarHealthUITests */,
+				8F17416B2F2A664E00452A46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F17416B2F2A664E00452A46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F17416A2F2A664E00452A46 /* CarHealth.app */,
+				8F17417C2F2A665100452A46 /* CarHealthTests.xctest */,
+				8F1741862F2A665100452A46 /* CarHealthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F1741692F2A664E00452A46 /* CarHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1741902F2A665100452A46 /* Build configuration list for PBXNativeTarget "CarHealth" */;
+			buildPhases = (
+				8F1741662F2A664E00452A46 /* Sources */,
+				8F1741672F2A664E00452A46 /* Frameworks */,
+				8F1741682F2A664E00452A46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F1742252F2A6E0800452A46 /* CarHealth */,
+			);
+			name = CarHealth;
+			packageProductDependencies = (
+			);
+			productName = CarHealth;
+			productReference = 8F17416A2F2A664E00452A46 /* CarHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F17417B2F2A665100452A46 /* CarHealthTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1741932F2A665100452A46 /* Build configuration list for PBXNativeTarget "CarHealthTests" */;
+			buildPhases = (
+				8F1741782F2A665100452A46 /* Sources */,
+				8F1741792F2A665100452A46 /* Frameworks */,
+				8F17417A2F2A665100452A46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F17417E2F2A665100452A46 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8F17417F2F2A665100452A46 /* CarHealthTests */,
+			);
+			name = CarHealthTests;
+			packageProductDependencies = (
+			);
+			productName = CarHealthTests;
+			productReference = 8F17417C2F2A665100452A46 /* CarHealthTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F1741852F2A665100452A46 /* CarHealthUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1741962F2A665100452A46 /* Build configuration list for PBXNativeTarget "CarHealthUITests" */;
+			buildPhases = (
+				8F1741822F2A665100452A46 /* Sources */,
+				8F1741832F2A665100452A46 /* Frameworks */,
+				8F1741842F2A665100452A46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F1741882F2A665100452A46 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8F1741892F2A665100452A46 /* CarHealthUITests */,
+			);
+			name = CarHealthUITests;
+			packageProductDependencies = (
+			);
+			productName = CarHealthUITests;
+			productReference = 8F1741862F2A665100452A46 /* CarHealthUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F1741622F2A664E00452A46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					8F1741692F2A664E00452A46 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					8F17417B2F2A665100452A46 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8F1741692F2A664E00452A46;
+					};
+					8F1741852F2A665100452A46 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 8F1741692F2A664E00452A46;
+					};
+				};
+			};
+			buildConfigurationList = 8F1741652F2A664E00452A46 /* Build configuration list for PBXProject "CarHealth" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F1741612F2A664E00452A46;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8F17416B2F2A664E00452A46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F1741692F2A664E00452A46 /* CarHealth */,
+				8F17417B2F2A665100452A46 /* CarHealthTests */,
+				8F1741852F2A665100452A46 /* CarHealthUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F1741682F2A664E00452A46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F17417A2F2A665100452A46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1741842F2A665100452A46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F1741662F2A664E00452A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1741782F2A665100452A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1741822F2A665100452A46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F17417E2F2A665100452A46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F1741692F2A664E00452A46 /* CarHealth */;
+			targetProxy = 8F17417D2F2A665100452A46 /* PBXContainerItemProxy */;
+		};
+		8F1741882F2A665100452A46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F1741692F2A664E00452A46 /* CarHealth */;
+			targetProxy = 8F1741872F2A665100452A46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8F17418E2F2A665100452A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F17418F2F2A665100452A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F1741912F2A665100452A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Q2GL54W3S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.CarHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F1741922F2A665100452A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CarHealth/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Q2GL54W3S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.CarHealth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F1741942F2A665100452A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q2GL54W3S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.CarHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarHealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarHealth";
+			};
+			name = Debug;
+		};
+		8F1741952F2A665100452A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q2GL54W3S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.CarHealthTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarHealth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CarHealth";
+			};
+			name = Release;
+		};
+		8F1741972F2A665100452A46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q2GL54W3S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.CarHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarHealth;
+			};
+			name = Debug;
+		};
+		8F1741982F2A665100452A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3Q2GL54W3S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.CarHealthUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CarHealth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F1741652F2A664E00452A46 /* Build configuration list for PBXProject "CarHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F17418E2F2A665100452A46 /* Debug */,
+				8F17418F2F2A665100452A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1741902F2A665100452A46 /* Build configuration list for PBXNativeTarget "CarHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1741912F2A665100452A46 /* Debug */,
+				8F1741922F2A665100452A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1741932F2A665100452A46 /* Build configuration list for PBXNativeTarget "CarHealthTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1741942F2A665100452A46 /* Debug */,
+				8F1741952F2A665100452A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1741962F2A665100452A46 /* Build configuration list for PBXNativeTarget "CarHealthUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1741972F2A665100452A46 /* Debug */,
+				8F1741982F2A665100452A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F1741622F2A664E00452A46 /* Project object */;
+}
